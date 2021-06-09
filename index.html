@@ -1,0 +1,22 @@
+<form>
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+<label for="email">Email Id:</label><br>
+    <input type="text" id="email" name="email" value="Doe@johndoe.com"><br><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="button" value="Submit" onclick=runThrive();>
+  </fieldset>
+</form>
+
+<script>
+function runThrive(){
+var email = document.getElementById("email").value;
+alert(email);
+var widgetcode = '5ade2ac8757afef81bbe61a77bc1212fde87b3859222fceb2c9606cd3a786514';
+var data = {};data['za_email_id']= email;data['widgetcode']= '5ade2ac8757afef81bbe61a77bc1212fde87b3859222fceb2c9606cd3a786514';
+pushCustomerSignup(widgetcode,data);
+}
+</script>
